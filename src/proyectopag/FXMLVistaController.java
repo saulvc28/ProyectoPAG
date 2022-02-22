@@ -27,9 +27,7 @@ public class FXMLVistaController implements Initializable {
     @FXML
     private AnchorPane lblClear;
     @FXML
-    private ImageView imgFondo;
-    @FXML
-    private Button btnLogin;
+    private ImageView img;
     @FXML
     private Label label;
     @FXML
@@ -44,6 +42,8 @@ public class FXMLVistaController implements Initializable {
     private Button btnClear;
     @FXML
     private PasswordField pswd;
+    @FXML
+    private Button btnLogin;
 
     /**
      * Initializes the controller class.
@@ -55,6 +55,8 @@ public class FXMLVistaController implements Initializable {
 
     @FXML
     private void handleButtonAction(ActionEvent event) {
+        String usuario = txtUsuario.getText();
+        lblBienvenido.setText("Bienvenido " + usuario);
     }
     
 }
