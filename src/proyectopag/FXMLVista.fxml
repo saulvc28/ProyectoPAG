@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="lblClear" prefHeight="301.0" prefWidth="401.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyectopag.FXMLVistaController">
+    <children>
+      <ImageView fx:id="imgFondo" fitHeight="300.0" fitWidth="400.0" layoutX="1.0" layoutY="4.0" opacity="0.21" pickOnBounds="true" preserveRatio="true" smooth="false">
+         <image>
+            <Image url="@../../../fondo.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label fx:id="lblUsuario" layoutX="40.0" layoutY="36.0" text="Usuario:">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUsuario" layoutX="40.0" layoutY="56.0" />
+      <Label fx:id="lblContraseña" layoutX="40.0" layoutY="92.0" text="Contraseña:">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblBienvenido" layoutX="40.0" layoutY="170.0" prefHeight="17.0" prefWidth="218.0" />
+      <Button fx:id="btnClear" layoutX="142.0" layoutY="228.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="30.0" prefWidth="87.0" text="Limpiar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="pswd" layoutX="39.0" layoutY="116.0" />
+      <Button fx:id="btnLogin" layoutX="47.0" layoutY="228.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="87.0" text="Login!">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
