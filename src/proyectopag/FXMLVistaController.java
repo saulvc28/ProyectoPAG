@@ -54,9 +54,15 @@ public class FXMLVistaController implements Initializable {
     }    
 
     @FXML
-    private void handleButtonAction(ActionEvent event) {
+    private void accioMostrar(ActionEvent event) {
         String usuario = txtUsuario.getText();
-        lblBienvenido.setText("Bienvenido " + usuario);
+        lblBienvenido.setText("Bienvenido/a " + usuario + "!");
     }
     
+    @FXML
+    private void accionLimpiar(ActionEvent event) {
+        txtUsuario.setText("");
+        pswd.setText("");
+        lblBienvenido.setText("");
+    }
 }
