@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="391.0" prefWidth="227.0" styleClass="fondo" stylesheets="@style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="proyectopag.FXMLIngresoController">
+   <children>
+      <Label layoutX="37.0" layoutY="26.0" text="Editorial:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox layoutX="37.0" layoutY="46.0" prefWidth="150.0" />
+      <Label layoutX="37.0" layoutY="93.0" text="Nombre del SuperHeroe:" />
+      <TextField layoutX="37.0" layoutY="110.0" />
+      <Label layoutX="37.0" layoutY="146.0" text="Alter Ego:" />
+      <TextField layoutX="38.0" layoutY="163.0" />
+      <Label layoutX="37.0" layoutY="200.0" text="Primera Publicación:" />
+      <TextField layoutX="38.0" layoutY="217.0" />
+      <Label layoutX="37.0" layoutY="256.0" text="Personajes:" />
+      <TextField layoutX="38.0" layoutY="273.0" />
+      <Button layoutX="14.0" layoutY="336.0" mnemonicParsing="false" text="Guardar" />
+      <Button layoutX="82.0" layoutY="336.0" mnemonicParsing="false" text="Modificar" />
+      <Button layoutX="157.0" layoutY="336.0" mnemonicParsing="false" text="Eliminar." />
+   </children>
+</AnchorPane>
