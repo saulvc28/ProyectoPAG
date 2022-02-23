@@ -28,7 +28,7 @@ public class ProyectoPag extends Application {
     public void start(Stage primaryStage){
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(ProyectoPag.class.getResource("FXMLVista.fxml"));
+            loader.setLocation(ProyectoPag.class.getResource("/Prueba/FXMLVista.fxml"));
             // Cargo la ventana
             Pane ventana = (Pane) loader.load();
 

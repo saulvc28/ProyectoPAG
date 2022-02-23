@@ -1,12 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Prueba.FXMLPruebaController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="fondo" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Prueba.FXMLPruebaController">
    <children>
-      <Label layoutX="72.0" layoutY="48.0" text="Heroes:" />
-      <TextField fx:id="txtBuscar" layoutX="72.0" layoutY="73.0" />
+      <Label layoutX="32.0" layoutY="14.0" text="Heroes:">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <TextField fx:id="txtBuscar" layoutX="32.0" layoutY="34.0" />
+      <ImageView fx:id="imgCap" fitHeight="120.0" fitWidth="100.0" layoutX="33.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../marvelfotos/cap2-.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgCiclo" fitHeight="120.0" fitWidth="100.0" layoutX="136.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../marvelfotos/cyclops.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="32.0" layoutY="200.0" text="Capitán América" />
+      <Label layoutX="136.0" layoutY="200.0" text="Cyclops " />
+      <ImageView fitHeight="120.0" fitWidth="100.0" layoutX="233.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../marvelfotos/daredevil1-.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="100.0" layoutX="340.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../marvelfotos/Hawkeye-.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="100.0" layoutX="450.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../marvelfotos/hulk1-.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="102.0" layoutX="36.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../dcfotos/tomsuper.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="100.0" layoutX="241.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../dcfotos/flechaoli.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="80.0" layoutX="348.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../dcfotos/martian.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="96.0" layoutX="450.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../dcfotos/robin.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="96.0" layoutX="133.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../dcfotos/flashba.png" />
+         </image>
+      </ImageView>
+      <ScrollBar layoutX="572.0" layoutY="68.0" orientation="VERTICAL" prefHeight="313.0" prefWidth="14.0" />
+      <Label layoutX="233.0" layoutY="200.0" text="DareDevil" />
+      <Label layoutX="340.0" layoutY="200.0" text="Hawkeye" />
+      <Label layoutX="450.0" layoutY="200.0" text="Hulk" />
+      <Label layoutX="36.0" layoutY="373.0" text="Superman" />
+      <Label layoutX="133.0" layoutY="373.0" text="Flash" />
+      <Label layoutX="241.0" layoutY="373.0" text="Green Arrow" />
+      <Label layoutX="348.0" layoutY="373.0" prefHeight="17.0" prefWidth="87.0" text="Martian Manhunter" />
+      <Label layoutX="450.0" layoutY="373.0" text="Robin" />
+      <Button layoutX="189.0" layoutY="34.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" text="Buscar" />
    </children>
 </AnchorPane>

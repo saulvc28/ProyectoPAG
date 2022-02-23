@@ -20,7 +20,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -61,13 +60,8 @@ public class FXMLVistaController implements Initializable {
 
     @FXML
     private void accionLimpiar(ActionEvent event) {
-        
-    }
-
-    @FXML
-    private void accioMostrar(MouseEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("FXMLPrueba.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Prueba/FXMLPrueba.fxml"));
             
             Parent root = loader.load();
             

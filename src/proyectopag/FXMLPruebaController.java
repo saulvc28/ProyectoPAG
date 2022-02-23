@@ -9,8 +9,8 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 
 /**
  * FXML Controller class
@@ -20,9 +20,11 @@ import javafx.scene.control.TextField;
 public class FXMLPruebaController implements Initializable {
 
     @FXML
-    private Label lblHeroes;
-    @FXML
     private TextField txtBuscar;
+    @FXML
+    private ImageView imgCap;
+    @FXML
+    private ImageView imgCiclo;
 
     /**
      * Initializes the controller class.

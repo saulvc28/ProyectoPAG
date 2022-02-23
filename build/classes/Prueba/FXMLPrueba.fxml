@@ -2,11 +2,27 @@
 
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Prueba.FXMLPruebaController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="fondo" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Prueba.FXMLPruebaController">
    <children>
-      <Label layoutX="72.0" layoutY="48.0" text="Heroes:" />
-      <TextField fx:id="txtBuscar" layoutX="72.0" layoutY="73.0" />
+      <Label layoutX="32.0" layoutY="28.0" text="Heroes:">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <TextField fx:id="txtBuscar" layoutX="32.0" layoutY="56.0" />
+      <ImageView fx:id="imgCap" fitHeight="120.0" fitWidth="100.0" layoutX="32.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../marvelfotos/cap2-.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgCiclo" fitHeight="120.0" fitWidth="100.0" layoutX="136.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../marvelfotos/cyclops.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
