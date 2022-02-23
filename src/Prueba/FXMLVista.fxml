@@ -28,7 +28,7 @@
          </font>
       </Button>
       <PasswordField fx:id="pswd" layoutX="39.0" layoutY="116.0" />
-      <Button fx:id="btnLogin" layoutX="47.0" layoutY="228.0" mnemonicParsing="false" onAction="#accioMostrar" prefHeight="30.0" prefWidth="87.0" text="Login!">
+      <Button fx:id="btnLogin" layoutX="47.0" layoutY="228.0" mnemonicParsing="false" onMouseClicked="#accioMostrar" prefHeight="30.0" prefWidth="87.0" text="Login!">
          <font>
             <Font size="14.0" />
          </font>

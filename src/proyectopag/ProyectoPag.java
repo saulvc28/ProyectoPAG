@@ -5,6 +5,9 @@
  */
 package proyectopag;
 
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.application.Application;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -12,6 +15,7 @@ import javafx.scene.layout.Background;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 /**
@@ -21,15 +25,22 @@ import javafx.stage.Stage;
 public class ProyectoPag extends Application {
     
     @Override
-    public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLVista.fxml"));
-        
-        Scene scene = new Scene(root);
-        
-    
-        stage.setScene(scene);
-        //stage.setTitle("Proyecto Final!");
-        stage.show();
+    public void start(Stage primaryStage){
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(ProyectoPag.class.getResource("FXMLVista.fxml"));
+            // Cargo la ventana
+            Pane ventana = (Pane) loader.load();
+
+            // Cargo el scene
+            Scene scene = new Scene(ventana);
+
+            // Seteo la scene y la muestro
+            primaryStage.setScene(scene);
+            primaryStage.show();
+        } catch (IOException ex) {
+            Logger.getLogger(ProyectoPag.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     /**
